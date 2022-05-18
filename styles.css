@@ -1,18 +1,24 @@
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 body {
     text-align: center;
     font-family: 'Philosopher', sans-serif;
     background-color: #E9DAEE;
+    background-image: linear-gradient(#A380DF, #E9DAEE, #E9DAEE);
     margin: 0;
     padding: 0;
 }
 
 .name {
-    background-color: #D2B4DE;
-    background-image: linear-gradient(#A380DF, #E9DAEE);
     display: flex;
     align-content: center;
     justify-content: center;
     margin-top: 0px;
+    margin-bottom: -100px;
 }
 
 h1 {
@@ -31,7 +37,6 @@ h1 {
     width: 380px;
     border-radius: 50%;
     border: 6px solid #E9DAEE;
-    margin-top: -115px;
 }
 
 .headings {
@@ -39,10 +44,92 @@ h1 {
     color: #A380DF;
 }
 
+.titles {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.lines {
+    color: #5c9057;
+}
+
 h2 {
     font-size: 50px;
-    margin-top: 0;
+    margin-top: 15px;
+    text-align: center;
 }
+
+#navigate {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#navigate .toggle {
+    color: #E9DAEE;
+    width: 80px;
+    height: 80px;
+    font-size: 35px;
+    line-height: 65px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+.menu {
+    display: flex;
+    overflow: hidden;
+    width: 0;
+    -moz-transition: width 0.7s ease-in;
+    -o-transition: width 0.7s ease-in;
+    -webkit-transition: width 0.7s ease-in;
+    transition: width 0.7s ease-in;
+  }
+
+.menu ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    height: 65px;
+    width: 100%;
+  }
+
+.menu ul li {
+    display: inline-block;
+  }
+
+.menu ul li a {
+    height: 65px;
+    line-height: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    -moz-transition:border-bottom 0.17s cubic-bezier(0.6, -0.28, 0.74, 0.05);
+    -webkit-transition:border-bottom 0.17s cubic-bezier(0.6, -0.28, 0.74, 0.05);
+    transition:border-bottom 0.17s cubic-bezier(0.6, -0.28, 0.74, 0.05);
+  
+  }
+
+.menu ul li a:hover {
+    cursor: pointer;
+    border-bottom: 2px solid #5c9057;
+  }
+  
+  /* Handle Classes with JQuery */
+.open {
+    width: 562px;
+    -moz-transition: width 0.4s linear;
+    -webkit-transition: width 0.4s linear;
+    transition: width 0.4s linear;
+  }
+
+.toggle.cancel {
+    opacity: 0.85;
+  }
+
+.toggle.cancel:hover {
+    opacity: 0.95;
+  }
 
 h3 {
     font-size: 40px;
