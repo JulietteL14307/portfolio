@@ -9,6 +9,7 @@ body {
     font-family: 'Philosopher', sans-serif;
     background-color: #E9DAEE;
     background-image: linear-gradient(#A380DF, #E9DAEE, #E9DAEE);
+    background-repeat: no-repeat;
     margin: 0;
     padding: 0;
 }
@@ -180,7 +181,114 @@ li {
   text-align: left;
 }
 
-@media only screen and (max-width: 500px) {
+.logo1 {
+  height: 100px;
+  width: 110px;
+  margin: 0px 20px 80px 20px;
+  filter: brightness(0%);
+  position: relative;
+  -webkit-animation: floatBubble 2s;
+  animation-fill-mode: forwards;
+}
+
+.logo1:hover {
+  height: 150px;
+  width: 160px;
+}
+
+.logo2 {
+  height: 100px;
+  width: 100px;
+  margin: 0px 20px 50px 20px;
+  position: relative;
+  -webkit-animation: floatBubble 2s;
+  animation-fill-mode: forwards
+}
+
+.logo2:hover {
+  height: 150px;
+  width: 150px;
+}
+
+.logo3 {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin: 0px 20px 20px 20px;
+  filter: grayscale(100%);
+  position: relative;
+  -webkit-animation: floatBubble 2s;
+  animation-fill-mode: forwards
+}
+
+.logo3:hover {
+  height: 150px;
+  width: 150px;
+}
+
+.logo4 {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin: 0px 20px -10px 20px;
+  position: relative;
+  -webkit-animation: floatBubble 2s;
+  animation-fill-mode: forwards
+}
+
+.logo4:hover {
+  height: 150px;
+  width: 150px;
+}
+
+@-webkit-keyframes floatBubble{
+  0%{
+        top:0;
+        -webkit-animation-timing-function: ease-in;
+  }
+
+  33% {
+      top: 50px;
+      -webkit-animation-timing-function: ease-out;
+  }
+
+  66% {
+        top:0;
+        -webkit-animation-timing-function: ease-in;
+   }
+
+  100% {
+        top:0px;
+        -webkit-animation-timing-function: ease-in;
+   }
+}
+
+.contactp {
+  padding: 40px;
+}
+
+footer {
+  text-align: center;
+  background-color: #A380DF;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+footer a {
+  color: #E9DAEE;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: black;
+}
+
+@media only screen and (max-width: 680px) {
 
   body {
     background-image: linear-gradient(#A380DF, #E9DAEE, #E9DAEE, #E9DAEE);
@@ -212,6 +320,26 @@ li {
 
   p {
     margin: 15px;
+  }
+
+  .logo1 {
+    height: 40px;
+    width: 50px;
+  }
+
+  .logo2 {
+    height: 40px;
+    width: 40px;
+  }
+
+  .logo3 {
+    height: 40px;
+    width: 40px;
+  }
+
+  .logo4 {
+    height: 40px;
+    width: 40px;
   }
 
 }
