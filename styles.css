@@ -47,6 +47,9 @@ h1 {
 .titles {
     display: flex;
     justify-content: space-evenly;
+    margin-top: 60px;
+    font-family: 'Twinkle Star', cursive;
+    color: #A380DF;
 }
 
 .lines {
@@ -135,10 +138,80 @@ h3 {
     font-size: 40px;
 }
 
+#more {
+  display: none;
+}
+
+.moreBtn {
+  transition-duration: 0.4s;
+  background-color: #E9DAEE;
+  border-color: #A380DF;
+  border-radius: 5px 300px 5px 300px;
+  width: 100px;
+  font-family: 'Philosopher', sans-serif;
+}
+
+.moreBtn:hover {
+  background-color: #A380DF;
+  color: #E9DAEE;
+}
+
 h4 {
     font-size: 30px;
 }
 
 p {
     margin: 40px 80px 40px 80px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin: 10px;
+}
+
+.skills {
+  margin-top: -50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+@media only screen and (max-width: 500px) {
+
+  body {
+    background-image: linear-gradient(#A380DF, #E9DAEE, #E9DAEE, #E9DAEE);
+  }
+
+  h1 {
+    font-size: 70px;
+    margin-top: 20px;
+  }
+
+  #navigate {
+    margin-top: 50px;
+  }
+
+  .menu ul li a {
+    font-size: 17px;
+  }
+
+  .me {
+    width: 280px;
+    height: 280px;
+    border-width: 4px;
+  }
+
+  h2 {
+    font-size: 25px;
+    margin-top: -50px;
+  }
+
+  p {
+    margin: 15px;
+  }
+
 }
