@@ -295,53 +295,147 @@ footer a:hover {
 #title {
   text-decoration: underline;
   text-decoration-color: #5c9057;
+  margin-top: 5px;
   margin-bottom: -14px;
   font-size: 60px;
 }
 
 .stalk {
 	width: 8px;
-	height: 650px;
+	height: 800px;
 	background-color: #5c9057;
   margin: 0 auto;
 }
 
-.leaf1, .leaf3, .leaf5{
-  cursor: pointer;
+.leaf1, .leaf3, .leaf5, .back1, .back3, .back5 {
   width: 254px;
   height: 117.5px;
   background-color: #5c9057;
-  opacity: 0.5;
-  transition: opacity 0.5s;
+  border: 2px solid #5c9057;
 	border-bottom-left-radius: 200px;
 	border-top-right-radius: 200px;
   position: relative;
   left: -250px;
-  bottom: -40px;
+  z-index: 2;
 }
 
-.leaf2, .leaf4 {
-  cursor: pointer;
+.leaf2, .leaf4, .back2, .back4 {
   width: 254px;
   height: 117.5px;
   background-color: #5c9057;
-  opacity: 0.5;
-  transition: opacity 0.5s;
+  border: 2px solid #5c9057;
 	border-bottom-right-radius:200px;
 	border-top-left-radius:200px;
   position: relative;
   left: 0px;
+  z-index: 2;
+}
+
+.leaf1 {
+  background-image: url("/images/invstory1.png");
+  background-size: 90%;
+  background-position: center center;
+  filter: grayscale(100%);
   bottom: -40px;
 }
 
-.leaf:hover, .leafa:hover{ 
-opacity:0.9;
+.leaf2 {
+  background-image: url("/images/rinas.png");
+  background-size: 90%;
+  background-position: center top;
+  filter: grayscale(100%);
+  bottom: 50px;
+}
+
+.leaf3 {
+  background-image: url("/images/boris.png");
+  background-size: 100%;
+  background-position: center top;
+  filter: grayscale(100%);
+  bottom: 140px;
+}
+
+.leaf4 {
+  background-image: url("/images/d&d.png");
+  background-size: 110%;
+  background-position: center top;
+  filter: grayscale(100%);
+  bottom: 230px;
+}
+
+.leaf5 {
+  background-image: url("/images/java.png");
+  background-size: 100%;
+  filter: grayscale(100%);
+  bottom: 320px;
+}
+
+.back1, .back2, .back3, .back4, .back5 {
+  z-index: 1;
+}
+
+.back1 {
+    bottom: 50px;
+}
+
+.back1 p {
+  font-size: 16px;
+  margin-top: 90px;
+  width: 145px;
+  color: #E9DAEE;
+}
+
+.back2 {
+  bottom: 140px;
+}
+
+.back2 p {
+  font-size: 16px;
+  margin-top: 90px;
+  margin-left: -30px;
+  width: 250px;
+  color: #E9DAEE;
+}
+
+.back3 {
+  bottom: 230px;
+}
+
+.back3 p {
+  font-size: 16px;
+  margin-top: 90px;
+  width: 145px;
+  color: #E9DAEE;
+}
+
+.back4 {
+  bottom: 320px;
+}
+
+.back4 p {
+  font-size: 16px;
+  margin-top: 90px;
+  margin-left: -25px;
+  width: 145px;
+  color: #E9DAEE;
+}
+
+.back5 {
+  bottom: 410px;
+}
+
+.back5 p {
+  font-size: 16px;
+  margin-top: 90px;
+  width: 145px;
+  color: #E9DAEE;
 }
 
 @media only screen and (max-width: 680px) {
 
   body {
     background-image: linear-gradient(#A380DF, #E9DAEE, #E9DAEE, #E9DAEE);
+    background-size: cover;
   }
 
   h1 {
@@ -410,6 +504,68 @@ opacity:0.9;
 
   .contactp {
     margin-top: 50px;
+  }
+
+  #title {
+    font-size: 50px;
+  }
+
+  .leaf1, .leaf2, .leaf3, .leaf4, .leaf5, .back1, .back2, .back3, .back4, .back5 {
+    height: 88px;
+    width: 191px;
+  }
+
+  .leaf1, .leaf3, .leaf5, .back1, .back3, .back5 {
+    left: -183px;
+  }
+
+  .back1 {
+    bottom: 30px;
+  }
+
+  .back1 p {
+    margin-top: 65px;
+    margin-left: 48px;
+  }
+
+  .back2 {
+    bottom: 120px;
+  }
+
+  .back2 p {
+    margin-top: 65px;
+    margin-left: -58px;
+  }
+
+  .back3 {
+    bottom: 210px;
+  }
+
+  .back3 p {
+    margin-top: 65px;
+    margin-left: 62px;
+  }
+
+  .back4 {
+    bottom: 300px;
+  }
+
+  .back4 p {
+    margin-top: 65px;
+    margin-left: -25px;
+  }
+
+  .back5 {
+    bottom: 390px;
+  }
+
+  .back5 p {
+    margin-top: 65px;
+    margin-left: 62px;
+  }
+
+  .stalk {
+    height: 630px;
   }
 
 }
