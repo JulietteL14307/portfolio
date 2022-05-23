@@ -101,6 +101,10 @@ h2 {
     display: inline-block;
   }
 
+  a:active {
+    color: #5c9057;
+  }
+
 .menu ul li a {
     height: 65px;
     line-height: 60px;
@@ -288,6 +292,52 @@ footer a:hover {
   color: black;
 }
 
+#title {
+  text-decoration: underline;
+  text-decoration-color: #5c9057;
+  margin-bottom: -14px;
+  font-size: 60px;
+}
+
+.stalk {
+	width: 8px;
+	height: 650px;
+	background-color: #5c9057;
+  margin: 0 auto;
+}
+
+.leaf1, .leaf3, .leaf5{
+  cursor: pointer;
+  width: 254px;
+  height: 117.5px;
+  background-color: #5c9057;
+  opacity: 0.5;
+  transition: opacity 0.5s;
+	border-bottom-left-radius: 200px;
+	border-top-right-radius: 200px;
+  position: relative;
+  left: -250px;
+  bottom: -40px;
+}
+
+.leaf2, .leaf4 {
+  cursor: pointer;
+  width: 254px;
+  height: 117.5px;
+  background-color: #5c9057;
+  opacity: 0.5;
+  transition: opacity 0.5s;
+	border-bottom-right-radius:200px;
+	border-top-left-radius:200px;
+  position: relative;
+  left: 0px;
+  bottom: -40px;
+}
+
+.leaf:hover, .leafa:hover{ 
+opacity:0.9;
+}
+
 @media only screen and (max-width: 680px) {
 
   body {
@@ -322,24 +372,44 @@ footer a:hover {
     margin: 15px;
   }
 
+  .contact {
+    margin-bottom: 100px;
+  }
+
+  .navigate span {
+    color: #A380DF;
+  }
+
+  .navigate {
+    margin-bottom: 40px;
+  }
+
   .logo1 {
     height: 40px;
     width: 50px;
+    margin-bottom: 0;
   }
 
   .logo2 {
     height: 40px;
     width: 40px;
+    margin-bottom: 0;
   }
 
   .logo3 {
     height: 40px;
     width: 40px;
+    margin-bottom: 0;
   }
 
   .logo4 {
     height: 40px;
     width: 40px;
+    margin-bottom: 0;
+  }
+
+  .contactp {
+    margin-top: 50px;
   }
 
 }
