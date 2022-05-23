@@ -26,11 +26,3 @@ function readMore() {
       moreText.style.display = "inline";
     }
   };
-
-// leaves
-
-function leafOne() {
-  document.getElementById("span").style.display = 'block';
-  document.getElementById("xbutton").style.display = 'block'; 
-  document.getElementById("span").innerHTML = '<p>InventoryStory CRUD App</p>';
-}
